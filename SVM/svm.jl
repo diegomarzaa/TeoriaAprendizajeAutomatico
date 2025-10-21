@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.19
+# v0.20.8
 
 using Markdown
 using InteractiveUtils
@@ -557,7 +557,7 @@ SVC = @load SVC pkg=LIBSVM verbosity=0
 
 # ╔═╡ 02be1603-d7bb-44bb-a2a6-371e417c046d
 md"""
-Una vez cargada, la instanciamos indicando que queremos usar un kernell lineal:
+Una vez cargada, la instanciamos indicando que queremos usar un kernel lineal:
 """
 
 # ╔═╡ ca98f95a-f479-43e5-bbfd-f47123ebd27d
@@ -565,7 +565,7 @@ modelo = SVC(kernel=LIBSVM.Kernel.Linear)
 
 # ╔═╡ 2b72cfbe-d119-46db-b5ad-8b23d9685e13
 md"""
-¿Qué es eso del kernerl?
+¿Qué es eso del kernel?
 """
 
 # ╔═╡ ba0a7a09-df29-4fac-b28f-b6319c88433c
@@ -1092,7 +1092,7 @@ Algunos kernels:
 
 - Lineal: $k(x,x^{\prime}) = x^t x^{\prime}$
 - Polinomial: $k(x,x^{\prime}) = (\gamma x^t x^{\prime} + r)^d$
-- Gaussiano: $k(x,x^{\prime}) = exp(-\gamma \|x^t x^{\prime}\|^2$
+- Gaussiano: $k(x,x^{\prime}) = exp(-\gamma \|x^t x^{\prime}\|^2)$
 - Sigmoide: $k(x,x^{\prime}) = tanh(\gamma x^T x^{\prime} + r)$
 """
 
@@ -1134,7 +1134,7 @@ misclassification_rate(ŷ, datos_complicados.clase)
 
 # ╔═╡ 98f63cb9-2d89-466b-8217-2ad6b982c5b9
 md"""
-Todos los dato se han clasificado bien.
+Todos los datos se han clasificado bien. 
 """
 
 # ╔═╡ fd82cb57-a7b4-445d-86d5-0d7aaf12f878
